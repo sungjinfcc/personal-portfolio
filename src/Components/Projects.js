@@ -13,8 +13,8 @@ function Projects() {
           src="assets/personal-portfolio.png"
           tech="Responsive design, Animation"
           date="Jul, 13, 2023"
-          preview="https://sungjinfcc.github.io/find-waldo/#/"
-          github="https://github.com/sungjinfcc/find-waldo"
+          preview="https://sungjinfcc.github.io/personal-portfolio"
+          github="https://github.com/sungjinfcc/personal-portfolio"
         />
         <Project
           title={"Where's Waldo"}

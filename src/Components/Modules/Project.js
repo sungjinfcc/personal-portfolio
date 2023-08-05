@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function Project({ title, src, tech, date, preview, github }) {
   return (
@@ -11,10 +13,10 @@ function Project({ title, src, tech, date, preview, github }) {
       <p className="date">{date}</p>
       <div className="links">
         <a href={preview} target="blank">
-          LIVE PREVIEW
+          LIVE PREVIEW <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
         <a href={github} target="blank">
-          VIEW CODE
+          VIEW CODE <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </div>
     </div>

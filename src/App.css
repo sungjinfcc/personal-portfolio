@@ -74,19 +74,61 @@ a:visited {
   border-bottom: 1rem solid white;
 }
 
-/* about */
-.about {
+/* main */
+.main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 3vw;
 }
-.about .name {
+.main .name {
   font-family: "Roboto", sans-serif;
   margin-bottom: 3rem;
   font-weight: 400;
   font-style: italic;
+}
+
+/* about */
+.about {
+  min-height: 100vh;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.about .title {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.about .texts {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.about .texts .text {
+  margin-top: 2rem;
+}
+.about hr {
+  margin-top: 5rem;
+}
+.about hr.second {
+  margin-bottom: 5rem;
+}
+.about .icons {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 5rem;
+}
+.about .icons img {
+  width: 4rem;
+}
+.about .icons img.express {
+  background-color: white;
+  padding: 0.2rem;
 }
 
 /* projects */
@@ -142,6 +184,15 @@ h4 {
   align-items: center;
   margin-top: 2rem;
   margin-top: 2rem;
+  gap: 1rem;
+}
+.github {
+  font-size: 1.5rem;
+  margin-left: -0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+.github:hover {
+  transform: scale(1.2);
 }
 /* contact */
 .contact {
@@ -177,21 +228,28 @@ h4 {
   margin-top: -0.5rem;
   margin-bottom: -0.3rem;
 }
-/* footer */
-.footer {
+.contact .icons {
+  margin-top: 0.5rem;
   display: flex;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
-.fa-github {
+.contact .icons a {
+  padding: 0;
+  background-color: transparent;
   color: white;
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease-in-out;
+  font-size: 2rem;
+  transition: transform 0.2s ease-in-out;
 }
-
-.fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
+.contact .icons a:hover {
+  transform: scale(1.2);
+}
+/* Footer */
+.footer {
+  margin-bottom: 2rem;
+}
+.footer p {
+  font-size: 1rem;
+  font-style: italic;
 }

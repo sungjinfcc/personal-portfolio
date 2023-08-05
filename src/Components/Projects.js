@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Modules/Project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Projects() {
@@ -9,12 +10,36 @@ function Projects() {
       <h1 className="projects-title">Projects</h1>
       <div className="projects">
         <Project
-          title={"Personal portfolio"}
-          src="assets/personal-portfolio.png"
-          tech="Responsive design, Animation"
-          date="Jul, 13, 2023"
-          preview="https://sungjinfcc.github.io/personal-portfolio"
-          github="https://github.com/sungjinfcc/personal-portfolio"
+          title={"Odin book"}
+          src="assets/odin-book.png"
+          tech="Full stack Facebook clone app"
+          date="Aug, 2, 2023"
+          preview="https://sungjinfcc.github.io/odin-book/"
+          github="https://github.com/sungjinfcc/odin-book"
+        />
+        <Project
+          title={"Me Chat"}
+          src="assets/me-chat.png"
+          tech="User Authentication"
+          date="Jul, 29, 2023"
+          preview="https://sungjinfcc.github.io/me-chat/"
+          github="https://github.com/sungjinfcc/me-chat/tree/main"
+        />
+        <Project
+          title={"Blog-API"}
+          src="assets/blog.png"
+          tech="REST API"
+          date="Jul, 26, 2023"
+          preview="https://sungjinfcc.github.io/blog-api/"
+          github="https://github.com/sungjinfcc/blog-api"
+        />
+        <Project
+          title={"Inventory"}
+          src="assets/inventory.png"
+          tech="NodeJS, MongoDB, CRUD and MVC"
+          date="Jul, 20, 2023"
+          preview="https://inventory-application-production-6f37.up.railway.app/catalog"
+          github="https://github.com/sungjinfcc/inventory-application"
         />
         <Project
           title={"Where's Waldo"}
@@ -159,7 +184,8 @@ function Projects() {
         rel="noreferrer"
         className="link-more"
       >
-        View more <FontAwesomeIcon icon={faGithub} />
+        View more
+        <FontAwesomeIcon icon={faGithub} className="github" />
       </a>
     </div>
   );
